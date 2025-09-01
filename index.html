@@ -576,11 +576,7 @@
 <p>&nbsp;</p>
 
  <!-- блок курса конец --> 		
-	
-	
-	
-	
-	
+		
     </main>
 	
 	<!-- блок FAq конец --> 
@@ -636,107 +632,11 @@
         <p>© 2025 Рейтинг онлайн-курсов. Все права защищены.</p>
         <p>По вопросам обращаться: <a href="mailto:info@mystudy.ru">info@mystudy.ru</a></p>
         <p>Интернет-сайт носит информационный характер и ни при каких условиях не является публичной офертой, которая определяется положениями статьи 437 Гражданского кодекса РФ. Информация о программах курсов и иных условий, указанных на сайте, может быть изменена организацией предоставляющей услуги обучения в одностороннем порядке. Скриншоты с сайтов курсов могут отличаться от оригиналов. Информация по ценам, может отличаться от фактической, к моменту просмотра рейтинга.</p>
-      <p><a href="https://obuchenie-sportivnyj-psiholog.vercel.app/politika.html">Политика конфиденциальности</a></p>
+    
     </footer>
 
-	  <!-- Вплывашка с политикой  --> 
-    
-   <!-- Cookie-баннер -->
-<div id="cookie-consent" class="cookie-bar">
-    <div class="cookie-text">
-      Сайт использует сервис веб-аналитики
-      <a href="#" id="yandex-link">Яндекс Метрика</a>
-      с помощью технологии «cookie», чтобы пользоваться сайтом было удобнее.
-      Вы можете запретить обработку cookies в настройках браузера. Подробнее в <a href="https://obuchenie-sportivnyj-psiholog.vercel.app/politika.html">Политике</a>
-    </div>
-    <button class="cookie-btn" onclick="acceptCookieConsent()">Я согласен</button>
-  </div>
-  
-  <!-- Модальное окно -->
-  <div id="modal-overlay">
-    <div id="modal-window">
-      <span id="modal-close">&times;</span>
-      <div class="modal-title">Яндекс Метрика</div>
-      <div class="modal-content">
-  Этот сайт использует сервис веб-аналитики Яндекс Метрика, предоставляемый компанией ООО «ЯНДЕКС», 119021, Россия, Москва, ул. Л. Толстого, 16 (далее - Яндекс).<br><br>
-  Сервис Яндекс Метрика использует технологию «cookie».<br><br>
-  Собранная при помощи cookie информация не может идентифицировать вас, однако может помочь нам улучшить работу нашего сайта. Информация об использовании вами данного сайта будет передаваться и храниться на сервере Яндекса в Российской Федерации. Яндекс будет обрабатывать эту информацию с целью анализа пользовательской активности.<br><br>
-  Вы можете отказаться от использования cookies, выбрав соответствующие настройки в браузере. Используя этот сайт, вы соглашаетесь на обработку данных о вас Яндексом в порядке и целях, указанных выше.
-      </div>
-    </div>
-  </div>
-  
-    
-       <!-- Скрипт Вплывашка с политикой  --> 
-    
-       <script>  // Cookie-баннер
-       function acceptCookieConsent() {
-  document.getElementById('cookie-consent').style.display = 'none';
-  localStorage.setItem('cookieConsent', 'accepted');
-}
-
-// Проверяем, давал ли уже пользователь согласие
-window.addEventListener('DOMContentLoaded', function() {
-  if (localStorage.getItem('cookieConsent') === 'accepted') {
-    document.getElementById('cookie-consent').style.display = 'none';
-  } else {
-    document.getElementById('cookie-consent').style.display = '';
-  }
-});
-
-// Модалка Яндекс Метрика
-const yandexLink = document.getElementById('yandex-link');
-const modalOverlay = document.getElementById('modal-overlay');
-const modalClose = document.getElementById('modal-close');
-
-yandexLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  modalOverlay.style.display = 'flex';
-});
-modalClose.addEventListener('click', function() {
-  modalOverlay.style.display = 'none';
-});
-modalOverlay.addEventListener('click', function(e) {
-  if (e.target === modalOverlay) {
-    modalOverlay.style.display = 'none';
-  }
-});
-
-    </script>
- <!-- Конец Скрипта Вплывашка с политикой  --> 
-    
-    <script>
-        function getLastMonday() {
-            let now = new Date();
-            let day = now.getDay();
-            let diff = now.getDate() - day + (day === 0 ? -6 : 1);
-            let lastMonday = new Date(now.setDate(diff));
-
-            let options = { day: 'numeric', month: 'long', year: 'numeric' };
-            return lastMonday.toLocaleDateString('ru-RU', options);
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("update-date").textContent = getLastMonday();
-        });
-    </script>
-	<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(101507884, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/101507884" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+	
 </body>
 </html>
+
 
